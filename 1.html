@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION PART-1</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border-radius: 50%;
+            animation: animation1 10s infinite;
+        }
+
+        @keyframes animation1{
+
+            /*  1s */
+            0% {
+                background: orangered;
+                transform: scale(1.5);
+            }
+            /*  5s */
+            50% {
+                background: blue;
+                transform: scale(0.5);
+            }
+            /* 10s */
+            100% {
+                background: pink;
+                transform: scale(2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
